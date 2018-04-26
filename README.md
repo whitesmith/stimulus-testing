@@ -57,6 +57,6 @@ There are two versions: `index` uses stimulus to attach behaviour; `vanilla` use
 | 1000x|    1727      |     17       |    1895     |     16      |
 
 
-- PSI: perceptual speed index
+- PSI: perceptual speed index (less is best)
 - EIL: estimated input latency
 - all values in ms
