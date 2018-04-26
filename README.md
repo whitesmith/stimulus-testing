@@ -40,15 +40,17 @@ There are two versions: `index` uses stimulus to attach behaviour; `vanilla` use
 
 ### console.time / console.timeEnd (time to DOMContentLoaded + addEventListener)
 
-| page | stimulus | vanilla  |
-| 1x   |    3.0   |   0.34   |
-| 10x  |    4.0   |   0.45   |
-| 100x |    8.5   |   0.75   |
-| 1000x|    60.0  |   3.00   |
+| page | stimulus | vanilla |
+| ---- | -------- | ------- |
+| 1x   |    3.0   |   0.34  |
+| 10x  |    4.0   |   0.45  |
+| 100x |    8.5   |   0.75  |
+| 1000x|    60.0  |   3.00  |
 
 ### Lighthouse performance audit
 
 | page | stimulus PSI | stimulus EIL | vanilla PSI | vanilla EIL |
+| ---- | ------------ | ------------ | ----------- | ----------- |
 | 1x   |    1203      |     16       |    1182     |     16      |
 | 10x  |    1209      |     16       |    1185     |     16      |
 | 100x |    1331      |     16       |    1293     |     16      |
