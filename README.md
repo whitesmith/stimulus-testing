@@ -11,8 +11,11 @@ We recommend [remixing `stimulus-starter` on Glitch](https://glitch.com/edit/#!/
 Or, if you'd prefer to work from the comfort of your own text editor, you'll need to clone and set up `stimulus-starter`:
 
 ```
-$ git clone https://github.com/stimulusjs/stimulus-starter.git
-$ cd stimulus-starter
+$ git clone https://github.com/whitesmith/stimulus-testing.git
+$ cd stimulus-testing
+$ yarn install
+$ yarn start
+$ cd vue-testing
 $ yarn install
 $ yarn start
 ```
@@ -25,7 +28,7 @@ $ yarn start
 
 # Benchmarks
 
-There are two versions: `index` uses stimulus to attach behaviour; `vanilla` uses pure JS.
+There are two versions: `index` uses stimulus to attach behaviour; `vanilla` uses pure JS; VueJS uses port `8080`.
 
 - http://localhost:9000/index.html
 - http://localhost:9000/index-10x.html
@@ -35,17 +38,21 @@ There are two versions: `index` uses stimulus to attach behaviour; `vanilla` use
 - http://localhost:9000/vanilla-10x.html
 - http://localhost:9000/vanilla-100x.html
 - http://localhost:9000/vanilla-1000x.html
+- http://localhost:8080/#/
+- http://localhost:8080/#/10x
+- http://localhost:8080/#/100x
+- http://localhost:8080/#/1000x
 
 ## Results
 
 ### console.time / console.timeEnd (time to DOMContentLoaded + addEventListener)
 
-| page | stimulus | vanilla |
-| ---- | -------- | ------- |
-| 1x   |    3.0   |   0.34  |
-| 10x  |    4.0   |   0.45  |
-| 100x |    8.5   |   0.75  |
-| 1000x|    60.0  |   3.00  |
+| page | stimulus | vanilla | vuejs |
+| ---- | -------- | ------- | ----- |
+| 1x   |    3.0   |   0.34  | 15    |
+| 10x  |    4.0   |   0.45  | 19    |
+| 100x |    8.5   |   0.75  | 29    |
+| 1000x|    60.0  |   3.00  | 150   |
 
 ### Lighthouse performance audit
 
