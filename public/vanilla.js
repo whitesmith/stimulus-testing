@@ -13,7 +13,7 @@ ready(function(){
       elem.addEventListener(
         'click',
         function() {
-          var name = this.closest('div')
+          var name = this.parentNode
                      .querySelector('[data-target="hello.name"]')
                      .value;
           console.log("Hello, " + name + "!");
